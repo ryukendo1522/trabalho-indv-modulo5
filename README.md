@@ -1,30 +1,31 @@
 # trabalho indvidual modulo5 
-** AQUI ESTA O CODIGO **
+**AQUI ESTA O CODIGO**
+ANTES DE RODAR VOCE PRECISA INSTALAR O READLINE AQUI ESTA COMO INSTALA
+**NPM I READLINE**
 
-const readline = require('readline');
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+**const readline = require('readline');**
+**const rl = readline.createInterface({**
+  **input: process.stdin,****
+  **output: process.stdout**
+**});**
 
-let cssPropertiesList = [];
+**let cssPropertiesList = [];**
 
-function askForCSSProperties() {
+ **function askForCSSProperties() {
   rl.question('Insira uma lista de propriedades CSS separadas por vírgulas ou escreva "sair" para encerrar: ', (answer) => {
     if (answer === 'sair') {
       console.log('Encerrando programa.');
       console.log('Propriedades CSS inseridas:');
-      console.log(cssPropertiesList);
+      console.log(cssPropertiesList);**
       
-      rl.close();
-    } else {
-      let cssProperties = answer.split(',');
-      cssProperties.forEach(property => cssPropertiesList.push(property));
-      askForCSSProperties();
-      cssPropertiesList.sort();
-      console.log(cssPropertiesList);
-    }
-  });
+   ** rl.close();**
+    **} else {**  
+      **let cssProperties = answer.split(',');**
+      **cssProperties.forEach(property => cssPropertiesList.push(property));**
+      **askForCSSProperties();**
+      **cssPropertiesList.sort();**
+      **console.log(cssPropertiesList);**
+    **}**
+  **});**
 }
-
-askForCSSProperties();
+**askForCSSProperties();**
