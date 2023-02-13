@@ -1,7 +1,7 @@
 # trabalho indvidual modulo5 
-**AQUI ESTA O CODIGO**
-ANTES DE RODAR VOCE PRECISA INSTALAR O READLINE AQUI ESTA COMO INSTALA
-**NPM I READLINE**
+||**AQUI ESTA O CODIGO**||
+<BR>ANTES DE RODAR VOCE PRECISA INSTALAR O READLINE AQUI ESTA COMO INSTALAR</BR>
+||**NPM I READLINE**||
 
 **const readline = require('readline');**
 **const rl = readline.createInterface({**
